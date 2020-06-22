@@ -1,0 +1,28 @@
+{
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "legacyDecorators": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "typescript"
+  ],
+  "rules": {
+    "react/no-array-index-key": false,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": false
+  },
+  "settings": {
+    "import/resolver": "node"
+  }
+}
